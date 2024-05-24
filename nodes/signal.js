@@ -4,13 +4,13 @@ module.exports = function(RED) {
 	/**
 	 * Define Constanten
 	 */
-    const RootLink= "https://api.callmebot.com/whatsapp.php?";
+    const RootLink= "https://api.callmebot.com/signal.php?";
     
     /**
-	 * Function WhatsAppAccount
+	 * Function SignalAccount
 	 * @param {Config} config 
 	 */
-	function WhatsAppAccount(config) {
+	function SignalAccount(config) {
 		RED.nodes.createNode(this, config);
         var node = this;
         node.key = this.credentials.key; 	
@@ -112,11 +112,11 @@ module.exports = function(RED) {
     /**
 	 * Register Nodes
 	 */
-    RED.nodes.registerType('node-red-contrib-whatsapp-cmb-account', WhatsAppAccount,{
+    RED.nodes.registerType('node-red-contrib-signal-cmb-account', SignalAccount,{
         credentials: {
             key: {type:"password"},
             phonenumber: {type:"text"}
         }
     });
-    RED.nodes.registerType('node-red-contrib-whatsapp-cmb-send-message', SendMessage);
+    RED.nodes.registerType('node-red-contrib-signal-cmb-send-message', SendMessage);
 }
