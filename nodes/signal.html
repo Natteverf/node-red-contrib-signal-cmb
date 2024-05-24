@@ -1,8 +1,8 @@
 <script type='text/javascript'>
-	RED.nodes.registerType('node-red-contrib-whatsapp-cmb-account', {
+	RED.nodes.registerType('node-red-contrib-signal-cmb-account', {
         category: 'config',
-        icon: "whatsapp.svg",
-        color: "#25D366",
+        icon: "signal.svg",
+        color: "#3A76F0",
         defaults: {
             name: {value: ""}
         },
@@ -11,7 +11,7 @@
             phonenumber: {type:"text"}
         },
         label: function() {
-            return this.name||"Whatsapp Account";
+            return this.name||"Signal Account";
         },
         oneditsave: function(){
             console.log('save', this);
@@ -19,7 +19,7 @@
     });
 </script>
 
-<script type='text/x-red' data-template-name='node-red-contrib-whatsapp-cmb-account'>
+<script type='text/x-red' data-template-name='node-red-contrib-signal-cmb-account'>
 	<div class='form-row'>
 		<label for='node-config-input-name'><i class='fa fa-tag'></i> Name</label>
 		<input type='text' id='node-config-input-name' placeholder="Name for the account"/>
@@ -30,20 +30,20 @@
 	</div>
 	<div class='form-row'>
 		<label for='node-config-input-key'><i class='fa fa-key'></i> API-KEY</label>
-		<input type='password' id='node-config-input-key' placeholder="Your API-KEY for WhatsApp-CMB"/>
+		<input type='password' id='node-config-input-key' placeholder="Your API-KEY for Signal-CMB"/>
     </div>
     <div class="form-tips">
-        <p><b>Note</b>: How to create an API key? Show <a href="https://github.com/PfisterDaniel/node-red-contrib-whatsapp-cmb/blob/main/README.md#create-api-key">here</a> for more information.</p>
+        <p><b>Note</b>: How to create an API key? Show <a href="https://github.com/Natteverf/node-red-contrib-signal-cmb/blob/main/README.md#create-api-key">here</a> for more information.</p>
     </div>
 </script>
 
 
 
 <script type='text/javascript'>
-	RED.nodes.registerType('node-red-contrib-whatsapp-cmb-send-message', {
-		category: 'WhatsApp',
-        icon: "whatsapp.svg",
-        color: "#25D366",
+	RED.nodes.registerType('node-red-contrib-signal-cmb-send-message', {
+		category: 'Signal',
+        icon: "signal.svg",
+        color: "#3A76F0",
         paletteLabel: 'Send Message',
 		defaults: {
 			name: {
@@ -54,7 +54,7 @@
 				value: '',
 				required: true
             },  
-            account: {value: "", type:"node-red-contrib-whatsapp-cmb-account", required: false},
+            account: {value: "", type:"node-red-contrib-signal-cmb-account", required: false},
             text:{
 				value: '',
 				required: false,
@@ -140,7 +140,7 @@
 	})
 </script>
 
-<script type='text/x-red' data-template-name='node-red-contrib-whatsapp-cmb-send-message'>
+<script type='text/x-red' data-template-name='node-red-contrib-signal-cmb-send-message'>
 	<div class='form-row'>
 		<label for='node-input-name'><i class='fa fa-tag'></i> Name</label>
 		<input type='text' id='node-input-name' placeholder="Name for the node"/>
@@ -178,8 +178,8 @@
     </div>
 </script>
 
-<script type="text/html" data-help-name="node-red-contrib-whatsapp-cmb-send-message">
-    <p>Send a message with WhatsApp CallmeBot</p>
+<script type="text/html" data-help-name="node-red-contrib-signal-cmb-send-message">
+    <p>Send a message with Signal CallmeBot</p>
     
     <h3>Inputs</h3>
         <ol class="node-ports">
