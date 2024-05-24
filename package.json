@@ -1,23 +1,23 @@
 {
-  "name": "node-red-contrib-whatsapp-cmb",
+  "name": "node-red-contrib-signal-cmb",
   "version": "1.0.3",
-  "description": "Node-RED node to send WhatsApp Messages with WhatsApp CallmeBot",
+  "description": "Node-RED node to send Signal Messages with Signal CallmeBot",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PfisterDaniel/node-red-contrib-whatsapp-cmb.git"
+    "url": "git+https://github.com/Natteverf/node-red-contrib-signal-cmb.git"
   },
   "keywords": [
-    "whatsapp",
+    "signal",
     "node-red",
     "node",
     "messages"
   ],
-  "author": "Daniel Pfister",
-  "email": "kontakt@daniel-pfister.de",
+  "author": "Dave Goldsmith",
+  "email": "node-red@luxe-motor.nl",
   "license": "MIT",
   "node-red": {
     "version": ">=2.0.0",
@@ -26,9 +26,9 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/PfisterDaniel/node-red-contrib-whatsapp-cmb/issues"
+    "url": "https://github.com/Natteverf/node-red-contrib-signal-cmb/issues"
   },
-  "homepage": "https://github.com/PfisterDaniel/node-red-contrib-whatsapp-cmb#readme",
+  "homepage": "https://github.com/Natteverf/node-red-contrib-signal-cmb#readme",
   "dependencies": {
     "request": "^2.88.2"
   },
