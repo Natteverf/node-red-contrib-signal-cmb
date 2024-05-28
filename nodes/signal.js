@@ -4,7 +4,7 @@ module.exports = function(RED) {
 	/**
 	 * Define Constanten
 	 */
-    const RootLink= "https://api.callmebot.com/signal.php?";
+    const RootLink= "https://api.callmebot.com/signal/send.php?;
     
     /**
 	 * Function SignalAccount
